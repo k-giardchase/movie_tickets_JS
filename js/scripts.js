@@ -20,8 +20,7 @@ $(document).ready(function() {
       var inputtedMovieTitle = parseInt($("select#movieTitle").val());
       var inputtedShowtime = parseInt($("select#showtime").val());
       var inputtedAge = parseInt($("select#age").val());
-console.log(inputtedMovieTitle);
-console.log(inputtedShowtime);
+
       var newTicket = Object.create(Ticket);
 
       newTicket.movieTitle = inputtedMovieTitle;
@@ -29,7 +28,7 @@ console.log(inputtedShowtime);
       newTicket.age = inputtedAge;
 
       newTicket.cost();
-console.log(newTicket);
+
       $("#result").show();
       $(".finalprice").text(newTicket.price);
     });
